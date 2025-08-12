@@ -4,7 +4,18 @@ module.exports = {
   content: ["./app/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
   presets: [require("nativewind/preset")],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        jetBrainsMono: ["JetBrainsMono-Regular"],
+        jetBrainsMonoBold: ["JetBrainsMono-Bold"],
+        jetBrainsMonoExtraBold: ["JetBrainsMono-ExtraBold"],
+        jetBrainsMonoExtraLight: ["JetBrainsMono-ExtraLight"],
+        jetBrainsMonoLight: ["JetBrainsMono-Light"],
+        jetBrainsMonoMedium: ["JetBrainsMono-Medium"],
+        jetBrainsMonoSemiBold: ["JetBrainsMono-SemiBold"],
+        jetBrainsMonoThin: ["JetBrainsMono-Thin"],
+      }
+    },
   },
   plugins: [],
 }

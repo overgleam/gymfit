@@ -1,5 +1,5 @@
 import { useFonts } from "expo-font";
-import AppNavigator from "../navigation/AppNavigator";
+import { Stack } from "expo-router";
 import "./globals.css";
 
 export default function RootLayout() {
@@ -19,5 +19,5 @@ export default function RootLayout() {
     return null;
   }
 
-  return <AppNavigator />;
+  return <Stack screenOptions={{ headerShown: false }} />;
 }
